@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box{
+      height: 100px;
+      width: 100px;
+      border: 3px solid black;
+      position: relative;
+    }
+    #boxa{
+      top: 60px;
+      left: 30px;
+      background-color: red;
+      z-index: 1;
+    }
+    #boxb{
+      background-color: purple;
+      top: 30px;
+      left: 60px;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+   <!-- 
+    z-index
+    addtional levels on page in stack order
+    ex: pop up has highest level z index
+    -->
+    <div class="box" id="boxa">boxa</div>
+    <div class="box" id="boxb">boxb</div>
+</body>
+</html>

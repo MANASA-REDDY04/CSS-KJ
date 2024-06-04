@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    #first{
+      height: 40px;
+      width: 70px;
+      /* padding/margin: top right bottom left */
+      /* padding/margin: 10px all four directions*/
+      padding: 5px 5px 5px 5px;
+      margin: 5px 5px 5px 5px;
+      background-color: red;
+    }
+    #second{
+      height: 70px;
+      width: 70px;
+      padding: 25px;
+      margin: 10px;
+      background-color: purple;
+      color: white;
+      /* size type-of-border-line color */
+      border: 5px dotted orangered;
+      /* border radius: adds rounded corners */
+      /* can give all 4 directions also */
+      border-radius: 20px;
+      /* box sizing: content-box by default */
+      box-sizing: border-box;
+      /* border-box -> adds box around border, extra padding is not considerd */
+    }
+  </style>
+</head>
+<body>
+  <!-- BOX MODEL
+  margin (space between 2 elements)> border > padding(space from content) > content (height,width)
+  ele1 margin = 50px, ele2 margin = 30px -> dis btwn ele1 and ele2 = 50px, != 80px, considers only max value
+  -->
+  <div id="first">box1</div>
+  <div id="second">box2</div>
+</body>
+</html>

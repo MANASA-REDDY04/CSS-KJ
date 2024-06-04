@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      font-size: 20px;
+    }
+    #first{
+      height: 200px;
+      width: 200px;
+      background-color: orangered;
+      color: white;
+      font-size: 30px;
+    }
+    #second{
+      height: 30%;
+      width: 60%;
+      background-color: orchid;
+      /* font-size: 2em; */
+      font-size: 0.5rem;
+    }
+    #box{
+      height: 50vh;
+      width: 50vw;
+      background-color: orchid;
+    }
+  </style>
+</head>
+<body>
+  <!-- Pixel (px) Absolute Unit -->
+  <!-- Percentage -> relative to parent
+  compared and considerd from parent measurments.
+  If no Parent, considers whole web Page/document.
+  -->
+  <!-- 
+    em (multiple of parent) only for font-size
+    considers units, multiple from parent
+   -->
+   <!-- rem only for font-size (multiple of root element)-->
+   Body
+  <div id="first">first
+    <div id="second">second</div>
+  </div>
+
+  <!-- view width (vw) & view height (vh)
+  works for any element, compares with view port/window size
+  -->
+  <div id="box">hello ji!</div>
+</body>
+</html>

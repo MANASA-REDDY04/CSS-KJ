@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .box{
+      height: 50px;
+      width: 50px;
+      background-color: orchid;
+      margin: 5px;
+      border: 3px solid purple;
+      border-radius: 3px;
+      text-align: center;
+      /* 
+      display: block (full space/row)
+      inline (only element space, we cannot add extra height and width)
+      inline-block (block elements but acts as inline) we can add height and width
+      */
+      display: inline-block;
+
+      /* 
+      visibility: hidden -> hides but space is still there
+      display: none -> occupies the space also
+      */
+    }
+    #box2{
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="box1" class="box">box1</div>
+  <div id="box2" class="box">box2</div>
+  <div id="box3" class="box">box3</div>
+</body>
+</html>

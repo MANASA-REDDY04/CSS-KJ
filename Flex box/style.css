@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.heading {
+  font-size: 30px;
+  margin: 10px;
+}
+.container {
+  height: 600px;
+  width: 650px;
+  border: 2px solid black;
+  margin: 10px;
+  background-color: orchid;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  /* align-content: center; */
+}
+.box {
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  margin: 5px;
+  text-align: center;
+}
+#box1 {
+  background-color: red;
+  order: 2;
+}
+#box2 {
+  background-color: rgb(63, 205, 106);
+  /* align-self: flex-start; */
+  /* flex-grow: 2; */
+  /* flex-shrink: 2; */
+  order: 3;
+}
+#box3 {
+  background-color: rgb(44, 144, 216);
+  order: 1;
+}
+#box4 {
+  background-color: rgb(255, 187, 0);
+  order: 4;
+}
+
+/* flex-direction:
+in which direction flex items are ordered in container, defult -> row 
+
+justify content:
+how items are spread in container along main axis (x-axis)
+flex-start, flex-end, space-around, space-between, center etc..
+
+flex wrap:
+if container is not enough, it moves flex items to next line instead of shrinking the items
+
+algin items: 
+how items are spread around cross axis (y-axis)
+similar to justify content
+
+align content: space between flex items
+
+align self: applies alignment to specific flex item
+
+flex grow: / flex shrink: can apply to items if you want to grow or shrink
+
+order: over writes defualt html order of flex items
+
+*/

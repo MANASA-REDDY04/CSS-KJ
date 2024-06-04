@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* Group Selectors */
+    h1, #p1, .c1{
+      color: purple;
+    }
+    /* Descendant Selectors */
+    div p{
+      color: red;
+    }
+    p{
+      color: orange;
+    }
+  </style>
+</head>
+<body>
+  <h1>Group Selectors</h1>
+  <p id="p1">
+    first para with id
+  </p>
+  <p class="c1">
+    first para with class
+  </p>
+  <h2>Descendant Selector</h2>
+  <div id="first">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, totam.</p>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+</body>
+</html>
